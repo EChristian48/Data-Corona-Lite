@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: #009688;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover
+{
+    font-weight: 700;
+}
+
+h2, h3 {
+    color: #009688;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+th,
+td {
+    text-align: left;
+}
+
+input[type=text] {
+    background-color: #B2DFDB;
+    border: none;
+    padding: 6px;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #00796B;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #26A69A;
+    text-align: center;
+    color: white;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid gray;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .legend {
+        margin: 1px;
+        padding: 1px;
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.legends {
+    display: flex;
+    flex-grow: 1;
+}
+
+.legends ul {
+    flex: 1;
+}
+
+.legends li {
+    list-style-type: none;
+}
+
+.legend {
+    display: inline-block;
+    padding: 4px;
+    margin: 2px;
+    color: white;
+}
+
+.legend-text {
+    margin: auto;
+}
+
+.sangat-suram {
+    background-color: #710000;
+}
+
+.suram {
+    background-color: #ac0100;
+}
+
+.lumayan-suram {
+    background-color: #db3938;
+}
+
+.medium {
+    background-color: #f79898;
+    color: black;
+}
+
+.lumayan-medium {
+    background-color: #ffd0d0;
+    color: black;
+}
+
+.ringan {
+    background-color: #ffdfe0;
+    color: black;
+}
+
+.sangat-ringan {
+    background-color: #e0e0e0;
+    color: black;
+}
+
+.data {
+    box-sizing: border-box;
+    flex-basis: 60%;
+}
+
+.data ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.data li {
+    list-style-type: none;
+    font-size: 1.1em;
+    flex-basis: 20%;
+}

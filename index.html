@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Data Covid-19</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+
+  <body>
+    <header>
+
+      <div class="jumbotron">
+        <h1>Data Covid-19</h1>
+        <p>
+          Data tentang wabah Covid-19
+        </p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#dunia">Dunia</a></li>
+          <li><a href="#indonesia">Indonesia</a></li>
+          <li><a href="#cari">Cari Negara</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="content">
+        <article id="dunia" class="card">
+          <h2>Dunia</h2>
+          
+
+          <div class="flex-col">
+
+            <div class="flex-col">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/COVID-19_Outbreak_World_Map.svg" alt="Heatmap Covid-19" class="featured-image"/>
+            </div>
+
+            <div class="flex-col">
+
+              <div class="flex-row">
+
+                <div class="legends">
+                  <ul>
+                    <li><span class="legend sangat-suram">100,000+ kasus terkonfirmasi</span></li>
+                    <li><span class="legend suram">10,000 - 99,999 kasus terkonfirmasi</span></li>
+                    <li><span class="legend lumayan-suram">1,000 - 9,999 kasus terkonfirmasi</span></li>
+                    <li><span class="legend medium">100 - 999 kasus terkonfirmasi</span></li>
+                    <li><span class="legend lumayan-medium">10 - 99 kasus terkonfirmasi</span></li>
+                    <li><span class="legend ringan">1 - 9 kasus terkonfirmasi</span></li>
+                    <li><span class="legend sangat-ringan">Tidak ada kasus terkonfirmasi</span></li>
+                  </ul>
+                </div>
+
+                <div class="data">
+                  <ul>
+                    <li id="totalPositif"></li>
+                    <li id="totalSembuh"></li>
+                    <li id="totalMeninggal"></li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </article>
+
+        <article id="indonesia" class="card">
+          <h2>Indonesia</h2>
+
+          <div class="flex-col">
+
+            <div class="flex-row">
+              <div class="flex-col">
+
+                <div class="data">
+                  <ul id="dataIndonesia">
+
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </article>
+
+        <article id="cari" class="card">
+          <h2>Cari Negara</h2>
+
+          <div>
+            <input type="text" name="textCari" id="textCari" placeholder="Ketik nama negara...*">
+            <div>*case sensitive</div>
+          </div>
+          
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card">
+
+          <header>
+            <h2>SARS-CoV-2</h2>
+
+            <figure>
+              <img src="img/SARS-CoV-2_without_background.png" alt="Foto Coronavirus" />
+              <figcaption>Foto Coronavirus, <cite>sumber: <a href="https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome_coronavirus_2">Wikipedia</a></cite></figcaption>
+            </figure>
+
+          </header>
+
+          <section>
+            <h3>Informasi Lainnya</h3>
+
+            <table>
+              <tr>
+                <th>Realm</th>
+                <td>Riboviria</td>
+              </tr>
+
+              <tr>
+                <th>Filum</th>
+                <td>Incertae Sedis</td>
+              </tr>
+
+              <tr>
+              <th>Ordo</th>
+              <td>Nidovirales</td>
+            </tr>
+
+            <tr>
+              <th>Famili</th>
+              <td>Coronaviridae</td>
+            </tr>
+
+            <tr>
+              <th>Genus</th>
+              <td>Betacoronavirus</td>
+            </tr>
+
+            <tr>
+              <th>Subgenus</th>
+              <td>Sarbecovirus</td>
+            </tr>
+
+            <tr>
+              <th>Spesies</th>
+              <td>Severe acute respiratory syndrome-related coronavirus</td>
+            </tr>
+            </table>
+
+          </section>
+
+        </article>
+      </aside>
+
+      <aside>
+        <article class="profile card">
+
+          <header>
+            <h2>Tentang <q>Pembuat</q></h2>
+            <p>EChristian48</p>
+
+            <figure>
+              <img src="img/PENTING.jpeg" alt="Foto Pembuat" />
+              <figcaption>Ini foto saya, lumayan lah.</figcaption>
+            </figure>
+
+          </header>
+
+          <section>
+            <h3>Biodata</h3>
+
+            <table>
+              <tr>
+                <th>Nama Lengkap</th>
+                <td>Erick Christian</td>
+              </tr>
+
+              <tr>
+                <th>Tempat, tanggal lahir</th>
+                <td>Sukabumi, 19 April 2003</td>
+              </tr>
+
+              <tr>
+              <th>Pekerjaan</th>
+              <td>Siswas</td>
+            </tr>
+
+            <tr>
+              <th>Sekolah</th>
+              <td>SMK Wikrama Bogor</td>
+            </tr>
+
+            </table>
+
+          </section>
+
+        </article>
+      </aside>
+
+    </main>
+
+    <footer>
+      <p>API by: <a href="https://kawalcorona.com/api/">Ethical Hacker Indonesia</a>, website made by: <a href="https://github.com/EChristian48">Erick Christian</a> with the help of <a href="https://www.dicoding.com/">Dicoding</a></p>
+    </footer>
+
+    <script src="script/corona.js"></script>
+
+  </body>
+</html>
